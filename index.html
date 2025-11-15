@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Restaurante Tradição Mineira</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="ia/chatbot.css"> <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+
+  <header id="top">
+    <div class="container nav" aria-label="Barra de Navegação">
+      <a href="#home" class="brand">
+        <img src="img/logo.png" alt="Logo Tradição Mineira" class="brand__logo">
+        <span><b>Tradição</b> Mineira</span>
+      </a>
+
+      <button class="burger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav id="menu" aria-label="Menu principal">
+        <ul class="container">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#ambiente">Ambiente</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home" role="banner" aria-label="Abertura">
+    <div class="hero__content container">
+      <div class="logo-wrap">
+        <img src="img/logo.png" alt="Tradição Mineira">
+      </div>
+
+      <h1>O verdadeiro sabor de Minas</h1>
+      <p>Comida de vó, feita no fogão a lenha e servida com carinho. Um espaço
+        acolhedor para reunir a família, brindar o amor e matar a saudade da roça.</p>
+      <a href="#contato" class="cta">Contato</a>
+      <div style="margin-top:1rem">
+        <span class="tag">Culinária Mineira Autêntica</span>
+        <span class="tag">Ambiente Rústico e Aconchegante</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre Nós</h2>
+      <p class="section-sub">O Tradição Mineira nasceu do desejo de uma família mineira em compartilhar os sabores que atravessam gerações. Nossa missão é trazer à cidade o melhor da culinária típica de Minas, com pratos preparados em panelas de ferro, no fogão a lenha e com temperos especiais que remetem à comida de vó.</p>
+
+      <div class="about__grid">
+        <div class="about__img">
+          <img src="img/frente.PNG" alt="" loading="lazy">
+        </div>
+        <div class="about__text">
+          <h3 style="margin-top:0">Nossa Essência</h3>
+          <p>Aqui, cada receita é feita com carinho, respeitando o tempo de preparo e valorizando ingredientes selecionados.</p>
+          <p>Nosso salão une madeira, artesanato e uma iluminação acolhedora, criando um ambiente rústico e familiar. O espaço é perfeito para receber famílias, casais e turistas que buscam uma experiência autêntica, afetiva e memorável da verdadeira gastronomia mineira.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ambiente">
+    <div class="container">
+      <h2 class="section-title">Conheça o Ambiente</h2>
+      <p class="section-sub">Um passeio pelo nosso espaço rústico e acolhedor.</p>
+
+      <div class="carousel" aria-roledescription="carrossel">
+        <div class="slides" id="slides">
+          <div class="slide" aria-label="Foto 1">
+            <img src="img/salao1.jpg" alt="Salão com madeira e decoração artesanal" loading="lazy">
+          </div>
+          <div class="slide" aria-label="Foto 2">
+            <img src="img/pratos1.jpg" alt="Pratos típicos mineiros" loading="lazy">
+          </div>
+          <div class="slide" aria-label="Foto 3">
+            <img src="img/pratos2.jpg" alt="Detalhes do fogão a lenha" loading="lazy">
+          </div>
+        </div>
+
+        <div class="control">
+          <button class="btn-arrow" id="prev" aria-label="Anterior" title="Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 18l-6-6 6-6"></path>
+            </svg>
+          </button>
+          <button class="btn-arrow" id="next" aria-label="Próximo" title="Próximo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18l6-6-6-6"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="dots" id="dots" aria-label="Indicadores de slides"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="localizacao">
+    <div class="container">
+      <h2 class="section-title">Localização</h2>
+      <p class="section-sub">Estamos de portas abertas esperando você.</p>
+
+      <div class="grid-2">
+        <div class="map card" id="map">
+          <img src="img/mapa.PNG" alt="Mapa de localização do restaurante" style="width:100%; height:100%; object-fit:cover; border-radius:var(--radius);">
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0">Endereço</h3>
+          <p>Rod. Dionísio Bortoloto, 120 – Jardim Santa Cecília<br>Cidade/UF – Santa Cruz das Palmeiras</p>
+
+          <h3>Horários</h3>
+          <ul style="list-style:none; padding-left:0; margin:0">
+            <li><strong>Ter–Sex:</strong> 10:30h às 14h</li>
+            <li><strong>Sábado e Domingo:</strong> 10:30h às 14:30h</li>
+          </ul>
+
+          <div class="contact-ways" style="margin-top:1rem">
+            <a href="tel:+5511999999999" aria-label="Telefone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.15 9.81a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 2.08 1h3a2 2 0 0 1 2 1.72c.12.9.3 1.78.54 2.63a2 2 0 0 1-.45 2.11L6 8a16 16 0 0 0 8 8l.54-.17a2 2 0 0 1 2.11.45c.85.24 1.73.42 2.63.54A2 2 0 0 1 22 16.92z"/></svg>
+              <span>(19) 991931407</span>
+            </a>
+            <a href="https://wa.me/5519991931407" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.94 11.94 0 1 0 3.48 20.52 11.94 11.94 0 0 0 20.52 3.48Zm-5.7 15.76a9.52 9.52 0 0 1-4.53-1.2l-5.1 1.63 1.67-4.97a9.57 9.57 0 0 1-1.28-4.8 9.42 9.42 0 1 1 9.24 9.34Zm2.07-4.7c-.11-.18-.41-.29-.86-.5s-.53-.17-.76.18-.3.5-.59.72-.46.23-.78.08a7.84 7.84 0 0 1-3.29-2.86c-.25-.43.25-.4.72-1.33s-.04-.8-.18-1.09-.9-2.17-1.23-2.06-.68.08-1 .43a3.29 3.29 0 0 0-1 2.46 5.65 5.65 0 0 0 1.23 2.91 10.8 10.8 0 0 0 4.2 3.91c2.05.88 2.07.6 2.45.58s1.26-.45 1.44-.9.14-1.05.03-1.23Z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+              <span>@tradicaomineirascp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2 class="section-title">Contato</h2>
+      <p class="section-sub">Entre em contato conosco pelo WhatsApp ou Instagram!</p>
+      <div class="card">
+        <div style="display:flex; flex-direction:column; gap:1rem; align-items:center;">
+          <div class="contact-ways" style="justify-content:center; margin:0;">
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp" style="font-size:1.1rem; padding:1rem 1.5rem;">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.94 11.94 0 1 0 3.48 20.52 11.94 11.94 0 0 0 20.52 3.48Zm-5.7 15.76a9.52 9.52 0 0 1-4.53-1.2l-5.1 1.63 1.67-4.97a9.57 9.57 0 0 1-1.28-4.8 9.42 9.42 0 1 1 9.24 9.34Zm2.07-4.7c-.11-.18-.41-.29-.86-.5s-.53-.17-.76.18-.3.5-.59.72-.46.23-.78.08a7.84 7.84 0 0 1-3.29-2.86c-.25-.43.25-.4.72-1.33s-.04-.8-.18-1.09-.9-2.17-1.23-2.06-.68.08-1 .43a3.29 3.29 0 0 0-1 2.46 5.65 5.65 0 0 0 1.23 2.91 10.8 10.8 0 0 0 4.2 3.91c2.05.88 2.07.6 2.45.58s1.26-.45 1.44-.9.14-1.05.03-1.23Z"/></svg>
+              <span>WhatsApp: (19) 991931407</span>
+            </a>
+            <a href="https://instagram.com/tradicaomineira" target="_blank" rel="noopener" aria-label="Instagram" style="font-size:1.1rem; padding:1rem 1.5rem;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+              <span>@tradicaomineirascp</span>
+            </a>
+          </div>
+          <p style="margin:1rem 0 0; font-size:.95rem; opacity:.85; text-align:center;">
+            <strong>Horários de Funcionamento:</strong><br>
+            Ter-Sex: 10h às 14h<br>
+            Sábado e Domingo: 10h às 14:30h
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div id="chat-popup">
+    <div class="chat-header">
+      <h4>Tradição Mineira - Assistente</h4>
+      <button id="chat-close" aria-label="Fechar chat" title="Fechar chat">&times;</button>
+    </div>
+    <div id="chat-box">
+      </div>
+    <div class="chat-input-area">
+      <input id="chat-input" placeholder="Digite sua pergunta...">
+      <button id="send-btn" aria-label="Enviar" title="Enviar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transform: rotate(45deg); margin-left:2px;">
+          <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <button id="chat-toggle" aria-label="Abrir chat" title="Abrir chat">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/>
+    </svg>
+  </button>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> Tradição Mineira • Todos os direitos reservados</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"> </script>
+  <script src="ia/chatbot.js"></script>
+</body>
+</html>
