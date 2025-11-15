@@ -1,0 +1,1 @@
+O presente Projeto Integrado tem como objetivo o desenvolvimento de um chatbot inteligente integrado a uma landing page de um restaurante, com o propósito de melhorar o atendimento ao cliente, automatizar respostas frequentes e reduzir a exposição de dados pessoais em comunicações digitais.
